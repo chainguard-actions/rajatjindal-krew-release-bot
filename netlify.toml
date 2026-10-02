@@ -1,0 +1,24 @@
+[build]
+  command = "make lambda"
+  functions = "functions"
+  publish = "dist"
+[build.environment]
+  GO_IMPORT_PATH = "github.com/rajatjindal/krew-release-bot"
+  GO_VERSION = '1.26.x'
+  
+[[redirects]]
+  from = "/github-action-webhook"
+  to = "/.netlify/functions/github-action-webhook"
+  status = 200
+
+# Deploy Preview context:
+# All deploys generated from a pull/merge request
+# will inherit these settings.
+[context.deploy-preview.environment]
+  UPSTREAM_KREW_INDEX_REPO_OWNER = "rajatjin"
+
+# Branch deploy context:
+# All deploys that are not from a pull/merge request
+# or from the production branch will inherit these settings.
+[context.branch-deploy.environment]
+  UPSTREAM_KREW_INDEX_REPO_OWNER = "rajatjin"

@@ -1,0 +1,18 @@
+apiVersion: krew.googlecontainerregistry.com/v1alpha2
+kind: Plugin
+metadata:
+  name: example
+spec:
+  version: {{ .TagName }}
+  homepage: https://github.com/example/kubectl-example
+  shortDescription: "An example kubectl plugin"
+  description: |
+    An example kubectl plugin for testing purposes.
+  platforms:
+  - selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+    uri: https://github.com/example/kubectl-example/releases/download/{{ .TagName }}/kubectl-example_linux_amd64.tar.gz
+    sha256: "{{ .SHA256 }}"
+    bin: kubectl-example
