@@ -1,0 +1,1 @@
+# rajatjindal-krew-release-bot
