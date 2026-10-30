@@ -6,9 +6,9 @@ Hardened by [Chainguard](https://www.chainguard.dev) from the upstream action at
 
 ## Versions
 
-| Version | Tag | Upstream commit |
-|---------|-----|-----------------|
-| v0.0.51 | [`v0.0.51`](https://github.com/chainguard-actions/rajatjindal-krew-release-bot/tree/v0.0.51) | [`c970b8a`](https://github.com/rajatjindal/krew-release-bot/commit/c970b8a8f6dbc2f2285a26e3ae160903b87002c3) |
+| Version | Tag | Upstream commit | Hardening report |
+|---------|-----|-----------------|------------------|
+| v0.0.51 | [`v0.0.51`](https://github.com/chainguard-actions/rajatjindal-krew-release-bot/tree/v0.0.51) | [`c970b8a`](https://github.com/rajatjindal/krew-release-bot/commit/c970b8a8f6dbc2f2285a26e3ae160903b87002c3) | [`HARDENING.md`](https://github.com/chainguard-actions/rajatjindal-krew-release-bot/blob/v0.0.51/HARDENING.md) |
 
 ## Privacy
 
